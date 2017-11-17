@@ -38,28 +38,54 @@ int main(){
     		cout<<"4) Desea seleccionar un Earth-Bender "<<endl;
 			cout<<"5) Desea seleccionar un NON-Bender "<<endl;
 			cin>>tipoBender;
-			cout<<"Ingrese el tipo de poder que desea"<<endl;
-	    	cout<<"1) Desea seleccionar Ofensivo "<<endl;
-    		cout<<"2) Desea seleccionar Defensivo "<<endl;
-  		  	cout<<"3) Desea seleccionar Curativo "<<endl;
-    		cout<<"4) Desea seleccionar Invocacion de Mascota "<<endl;
-			cin>>tipoPoder;
-			PoderEspecial seleccionPoder; 
-			if (tipoBender==1){
-				int rango,fuerza;
-				cout<<"Ingrese rango del poder"<<endl;
-				cin>>rango;
-				cout<<"Ingrese rango del poder"<<endl;
-				cin>>fuerza;
-			}
-			if (tipoBender==2){
-				
-			}
-			if (tipoBender==3){
-				
-			}
-			if (tipoBender==4){
-			
+			PoderEspecial seleccionPoder;//MI PODER A SELECCIONAR
+			if (tipoBender!=5){
+				cout<<"Ingrese el tipo de poder que desea"<<endl;
+	    		cout<<"1) Desea seleccionar Ofensivo "<<endl;
+	    		cout<<"2) Desea seleccionar Defensivo "<<endl;
+	  		  	cout<<"3) Desea seleccionar Curativo "<<endl;
+    			cout<<"4) Desea seleccionar Invocacion de Mascota "<<endl;
+				cin>>tipoPoder;
+				string nombrePoder;
+				int nivelPoder;
+				cout<<"Ingrese Nombre del poder"<<endl;
+				cin>>nombrePoder;
+				cout<<"Ingrese nivel del Poder"<<endl;
+				cin>>nivelPoder;
+				if (tipoPoder==1){
+					int rango,fuerza;
+					cout<<"Ingrese rango del poder"<<endl;
+					cin>>rango;
+					cout<<"Ingrese fuerza del poder"<<endl;
+					cin>>fuerza;
+					Ofensivo(nombrePoder,nivelPoder,rango,fuerza);
+				}	
+				if (tipoPoder==2){
+					int resistencia,duracion;
+					cout<<"Ingrese resistencia del poder"<<endl;
+					cin>>resistencia;
+					cout<<"Ingrese duracion del poder"<<endl;
+					cin>>duracion;
+					Defensivo(nombrePoder,nivelPoder,resistencia,duracion);
+				}
+				if (tipoPoder==3){
+					string tipoCuracion
+					cout<<"Ingrese tipo de tipo de curacion del poder"<<endl;
+					cin>>tipoCuracion;
+					Curativo(nombrePoder,nivelPoder,tipoCuracion);
+				}
+				if (tipoPoder==4){
+					string nombreMascota,especie,habilidad,tipoMascota;
+					cout<<"Ingrese nombre de la mascota"<<endl;
+					cin>>nombreMascota;
+					cout<<"Ingrese especie "<<endl;
+					cin>>especie;
+					cout<<"Ingrese habilidad"<<endl;
+					cin>>habilidad;
+					cout<<"Ingrese tipo de mascota "<<endl;
+					cin>>tipoMascota;
+					InvocacionMascota(nombrePoder,nivelPoder,nombreMascota,especie,habilidad,tipoMascota);
+				}
 			}
 			cout<<"Ingrese Nacion de Nacion de Origen"<<endl;
 			cin>>nacionOrigen;

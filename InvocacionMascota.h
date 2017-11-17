@@ -14,6 +14,7 @@ class InvocacionMascota : PoderEspecial{
 		string Habilidad;
 		string TipoMascota;
 	public:
+		InvocacionMascota(string,int,string,string,string,string);
 		InvocacionMascota(string,string,string,string);
 		InvocacionMascota();
 		string getNombre();

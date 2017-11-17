@@ -11,6 +11,7 @@ class Curativo : PoderEspecial{
 	protected:
 		string TIpoCuracion;
 	public:
+		Curativo(string,int,string);
 		Curativo(string);
 		Curativo();
 		string getTIpoCuracion();

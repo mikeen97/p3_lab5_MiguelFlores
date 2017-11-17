@@ -1,6 +1,6 @@
 #include "Defensivo.h"
 
-Defensivo::Defensivo(int Resistencia,int Duracion){
+Defensivo::Defensivo(string Nombre,int NivelPoder,int Resistencia,int Duracion):PoderEspecial(Nombre,NivelPoder){
 	this->Resistencia=Resistencia;
 	this->Duracion=Duracion;
 }

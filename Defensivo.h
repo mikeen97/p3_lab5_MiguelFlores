@@ -12,6 +12,7 @@ class Defensivo : PoderEspecial{
 		int Resistencia;
 		int Duracion;
 	public:
+		Defensivo(string,int,int,int);
 		Defensivo(int,int);
 		Defensivo();
 		int getResistencia();

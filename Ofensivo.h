@@ -12,6 +12,7 @@ class Ofensivo : PoderEspecial{
 		int Rango;
 		int Fuerza;
 	public:
+		Ofensivo(string,int,int,int);
 		Ofensivo(int,int);
 		Ofensivo();
 		int getRango();

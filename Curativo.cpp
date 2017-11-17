@@ -1,6 +1,6 @@
 #include "Curativo.h"
 
-Curativo::Curativo(string TIpoCuracion){
+Curativo::Curativo(string Nombre,int NivelPoder,string TIpoCuracion):PoderEspecial(Nombre,NivelPoder){
 	this->TIpoCuracion=TIpoCuracion;
 }
 Curativo::Curativo(){

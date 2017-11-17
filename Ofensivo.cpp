@@ -1,6 +1,6 @@
 #include "Ofensivo.h"
 
-Ofensivo::Ofensivo(int Rango,int Fuerza){
+Ofensivo::Ofensivo(string Nombre,int NivelPoder,int Rango,int Fuerza):PoderEspecial(Nombre,NivelPoder){
 	this->Rango=Rango;
 	this->Fuerza=Fuerza;
 }
