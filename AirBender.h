@@ -9,20 +9,20 @@ using namespace std;
 #ifndef AIRBENDER_H
 #define AIRBENDER_H
 
-class AirBender : Persona{
+class AirBender : public Persona{
 	protected:
 		int CantidadPelo;
-		int ColorFlechas;
+		string ColorFlechas;
 		PoderEspecial* Poder;
 	public:
-		AirBender(string ,string ,int,string,int,int,PoderEspecial*);
-		AirBender(int,int,PoderEspecial*);
+		AirBender(string,string,int,string,int,string,PoderEspecial*);
+		AirBender(int,string,PoderEspecial*);
 		AirBender();
 		int getCantidadPelo();
 		void setCantidadPelo(int);
 
-		int getColorFlechas();
-		void setColorFlechas(int);
+		string getColorFlechas();
+		void setColorFlechas(string);
 
 		PoderEspecial* getPoder();
 		void setPoder(PoderEspecial*);

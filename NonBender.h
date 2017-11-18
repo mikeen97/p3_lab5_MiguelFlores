@@ -7,7 +7,7 @@ using namespace std;
 
 #ifndef NONBENDER_H
 #define NONBENDER_H
-class NonBender : Persona{
+class NonBender :public  Persona{
 	protected:
 		string TrabajoLaboral;
 		int Fuerza;

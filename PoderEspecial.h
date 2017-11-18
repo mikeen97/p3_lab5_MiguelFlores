@@ -15,7 +15,6 @@ class PoderEspecial{
 		PoderEspecial();
 		string getNombre();
 		void setNombre(string);
-
 		int getNivelPoder();
 		void setNivelPoder(int);
 

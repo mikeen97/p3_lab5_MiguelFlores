@@ -8,7 +8,7 @@ using namespace std;
 
 #ifndef EARTHBENDER_H
 #define EARTHBENDER_H
-class EarthBender : Persona{
+class EarthBender : public  Persona{
 	protected:
 		int CantidadColas;
 		int GraduacionOjos;

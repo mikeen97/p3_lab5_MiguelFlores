@@ -7,7 +7,7 @@ using namespace std;
 
 #ifndef INVOCACIONMASCOTA_H
 #define INVOCACIONMASCOTA_H
-class InvocacionMascota : PoderEspecial{
+class InvocacionMascota :public PoderEspecial{
 	protected:
 		string Nombre;
 		string Especie;

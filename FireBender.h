@@ -8,7 +8,7 @@ using namespace std;
 
 #ifndef FIREBENDER_H
 #define FIREBENDER_H
-class FireBender : Persona{
+class FireBender : public  Persona{
 	protected:
 		int NumeroCicatrices;
 		int NumeroVictorias;

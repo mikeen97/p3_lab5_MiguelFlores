@@ -1,6 +1,6 @@
 #include "InvocacionMascota.h"
 
-InvocacionMascota::InvocacionMascota(string Nombre,int NivelPoder,string Nombre,string Especie,string Habilidad,string TipoMascota):PoderEspecial(Nombre,NivelPoder){
+InvocacionMascota::InvocacionMascota(string Nombrep,int NivelPoder,string Nombre,string Especie,string Habilidad,string TipoMascota):PoderEspecial(Nombrep,NivelPoder){
 	this->Nombre=Nombre;
 	this->Especie=Especie;
 	this->Habilidad=Habilidad;

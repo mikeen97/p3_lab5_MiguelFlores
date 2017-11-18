@@ -1,5 +1,5 @@
 #include "AirBender.h"
-AirBender::AirBender(string NacionOrigen,string Nombre,int Edad,string Sexo,int CantidadPelo,int ColorFlechas,PoderEspecial* Poder):Persona(NacionOrigen, Nombre,Edad,Sexo){
+AirBender::AirBender(string NacionOrigen,string Nombre,int Edad,string Sexo,int CantidadPelo,string ColorFlechas,PoderEspecial* Poder):Persona(NacionOrigen, Nombre,Edad,Sexo){
 	this->CantidadPelo=CantidadPelo;
 	this->ColorFlechas=ColorFlechas;
 	this->Poder=Poder;
@@ -16,11 +16,11 @@ int AirBender::getCantidadPelo(){
    return CantidadPelo;
 }
 
-void AirBender::setColorFlechas(int ColorFlechas){
+void AirBender::setColorFlechas(string ColorFlechas){
    this-> ColorFlechas=ColorFlechas;
 }
 
-int AirBender::getColorFlechas(){
+string AirBender::getColorFlechas(){
    return ColorFlechas;
 }
 

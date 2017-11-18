@@ -1,6 +1,6 @@
 #include "PoderEspecial.h"
 
-PoderEspecial::PoderEspecial(string Nombre,int NivelPoder):PoderEspecial(Nombre,NivelPoder){
+PoderEspecial::PoderEspecial(string Nombre,int NivelPoder){
 	this->Nombre=Nombre;
 	this->NivelPoder=NivelPoder;
 }

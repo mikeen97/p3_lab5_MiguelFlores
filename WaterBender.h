@@ -8,7 +8,7 @@ using namespace std;
 
 #ifndef WATERBENDER_H
 #define WATERBENDER_H
-class WaterBender : Persona{
+class WaterBender : public  Persona{
 	protected:
 		string TribuOrigen;
 		string ArmaPreferida;
