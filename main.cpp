@@ -162,7 +162,7 @@ int main(){
 			}
 		}//fin del opcion 1 del primer menu
 		if (opcion==2){
-			escribirArchivo(listPersonas);
+
 		}//fin del opcion 2 del primer menu
 		if (opcion==3){
 			
@@ -173,6 +173,8 @@ int main(){
      }
      return 0;
 }
+
+/* 
 
 void escribirArchivo(vector<Persona> listPersonas){
 	ofstream archivo("Personas.txt",ios::out);
@@ -186,4 +188,4 @@ void escribirArchivo(vector<Persona> listPersonas){
 		archivo<<"Nombre: "<<p->getNombre()<<endl;
 	}
 	archivo.close();
-}
+} */
